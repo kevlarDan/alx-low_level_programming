@@ -7,15 +7,13 @@
  *
  * Return: Always 0 (Success)
 */
-
 int main(void)
 {
-	char str[] = "_putchar";
-	int ch;
-
-	for (ch = 0; ch < 8; ++ch)
-		_putchar(str[ch]);
-	_putchar('\n');
+	_putchar('B');
+	_putchar('e');
+	_putchar('t');
+	_putchar('t');
+	_putchar('y');
 
 	return (0);
 }
