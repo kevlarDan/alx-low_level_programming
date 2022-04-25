@@ -1,28 +1,24 @@
 #include "main.h"
+#include <stdio.h>
+
 /**
- * print_chessboard - prints the chess board
+ * main - check the code for ALX School students.
  *
- * @a: input pointer
- *
- * Return: return nothing
+ * Return: Always 0.
 */
 
-void print_chessboard(char (*a)[8])
+int main(void)
 {
-	int i, j;
-
-	i = 0;
-	j = 0;
-	while (i < 64)
-	{
-		if (i % 8 == 0 && i != 0)
-		{
-			j = i;
-			_putchar('\n');
-		}
-
-		_putchar(a[i / 8][i - j]);
-		i++;
-	}
-	_putchar('\n');
+	char board[8][8] = {
+	{'r', 'k', 'b', 'q', 'k', 'b', 'k', 'r'},
+	{'p', 'p', 'p', 'p', 'p', 'p', 'p', 'p'},
+	{' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+	{' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+	{' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+	{' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '},
+	{'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'},
+	{'R', 'K', 'B', 'Q', 'K', 'B', 'K', 'R'},
+	};
+	print_chessboard(board);
+	return (0);
 }
